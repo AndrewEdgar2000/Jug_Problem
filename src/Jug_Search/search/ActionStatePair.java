@@ -1,11 +1,11 @@
-package cm3038.search;
+package Jug_Search.search;
 
 /**
  * When a node is expanded, the successor function generates a list of action-state pairs.
  * Each pair represents the action which can be applied to the current state, and the new state after the application.
  * This class models such a action-state pair.
  * 
- * @author Kit-ying Hui
+ * @author edgar
  *
  */
 public class ActionStatePair

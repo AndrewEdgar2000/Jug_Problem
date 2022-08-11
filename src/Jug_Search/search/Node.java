@@ -1,4 +1,4 @@
-package cm3038.search;
+package Jug_Search.search;
 
 /**
  * This class defines a node in the search algorithm.
@@ -21,15 +21,6 @@ public class Node
 	 * This point to the parent node. We need this to trace back the whole path (from to goal) when we find a goal.
 	 */
 public Node parent;	//pointing to parent node of path
-
-/*
- * ***Update on 2015/12/03:
- * 		No longer storing cost of path in a node as it leads to a problem when another shorter path is found to the same state.
- * 		Instead of storing the cost from root to node, now we use a getCost() method to calculate the cost of the path.
- * 		This ensures that the cost in nodes are correct all the time.
- * 
- * 		Also no longer storing the depth of a node as an attribute but calculate it by a recursive method.
- */
 
 /**
  * This is the action that brings us from the parent to this node.

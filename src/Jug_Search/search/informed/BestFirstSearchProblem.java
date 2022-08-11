@@ -1,17 +1,17 @@
-package cm3038.search.informed;
+package Jug_Search.search.informed;
 
 import java.util.*;
-import cm3038.search.*;
+import Jug_Search.search.*;
 
 /**
  * This is a specialised SearchProblem for informed searches.
  * This class contains most ingredients of an informed search problem.
  * In most cases you can simply extend this class to create your own specialised problem of informed search.
  * However, you still need to supply the evaluation function (and heuristic if needed).
- * @author kit
+ * @author edgar
  *
  */
-public abstract class BestFirstSearchProblem extends cm3038.search.SearchProblem {
+public abstract class BestFirstSearchProblem extends Jug_Search.search.SearchProblem {
 
 /**
  * Most informed searches need to compute the distance between the current state and the goal.
@@ -93,11 +93,6 @@ while (true)
 			if (lastSeenNode.getCost()>action.cost+node.getCost())	//going this new path is cheaper
 				{
 				lastSeenNode.parent=node;	//to reach this next state, you should go through the current node
-/*
- * *** Updated on 2015/12/03:
- * 		Do not store cost of path in node as it leads to a bug when a shorter path is found to the same state.
- * 		Cost of path is now recursively calculated from action cost leading to the current node + cost of path to parent node.
- */
 				lastSeenNode.action=action;					//update the action too
 				}
 			}

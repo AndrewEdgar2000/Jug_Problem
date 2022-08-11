@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cm3038.solution;
+package Jug_Search.solution;
 
-import cm3038.search.Action;
+import Jug_Search.search.Action;
 
 /**
  *
  * @author edgar
  */
+
 public class Jug_Action extends Action {
     
     //Attributes of Jug_Action
@@ -19,14 +20,21 @@ public class Jug_Action extends Action {
     public double amount;
     double fill = cost * 5.0;
     double empty = cost * 20.0;
-    
-            //Constructor for Jug_Action 
-            public Jug_Action(Choice c, Choice_Action cA){
+
+    /**
+     * Constructor for Jug_Action
+     * @param c
+     * @param cA
+     */
+    public Jug_Action(Choice c, Choice_Action cA){
                 this.choice = c;
                 this.choiceAction = cA;
             }
-    
-    //toString method outputs the information of the Jug_Action object 
+
+    /**
+     * toString method outputs the information of the Jug_Action object
+     * @return
+     */
     @Override 
     public String toString(){
         

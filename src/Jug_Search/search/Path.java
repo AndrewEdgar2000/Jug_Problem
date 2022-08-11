@@ -1,4 +1,4 @@
-package cm3038.search;
+package Jug_Search.search;
 import java.util.*;
 
 /**
@@ -12,7 +12,7 @@ import java.util.*;
  * A {@link Path} is return as the result when you do a search.
  * If it is not <code>null</code>, you can simply call the {@link Path#print() print()} method to print out the path.
  * 
- * @author Kit-ying Hui
+ * @author edgar
  *
  */
 public class Path extends LinkedList<ActionStatePair>
@@ -38,7 +38,7 @@ this.cost=0.0;
 
 /**
  * Prints the path, with each node and action.
- * The output is controlled by the {@link cm3038.search.State#toString() toString()} method
+ * The output is controlled by the {@link Jug_Search.search.State#toString() toString()} method
  * of the {@link State} objects and {@link Action} objects,
  * which can be customised in the domain specific sub-classes.
  */

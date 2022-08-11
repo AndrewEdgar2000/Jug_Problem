@@ -1,4 +1,4 @@
-package cm3038.search;
+package Jug_Search.search;
 
 /**
  * This abstract class defines all methods that an action (which changes state) must have.
@@ -7,7 +7,7 @@ package cm3038.search;
  * Thus I defined a {@link Action#cost} attribute in this abstract class, which
  * has a default value of 1.0 unless you override it in any sub-class.
  * 
- * @author Kit-ying Hui
+ * @author edgar
  */
 public abstract class Action
 {

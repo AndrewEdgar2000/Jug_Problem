@@ -1,10 +1,10 @@
-package cm3038.search;
+package Jug_Search.search;
 import java.util.*;
 
 /**
  * This class defines the default behaviour of a search problem.
  * Any class modelling a domain-specific search problem must extend this class.
- * @author Kit-ying Hui
+ * @author edgar
  *
  */
 public abstract class SearchProblem

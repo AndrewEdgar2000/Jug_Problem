@@ -1,4 +1,4 @@
-package cm3038.search;
+package Jug_Search.search;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ import java.util.*;
  * This interface defines the methods required on a problem state.
  * Any class that represents a problem state must implement this interface.
  *
- * @author Kit-ying Hui
+ * @author edgar
  */
 public interface State {
 

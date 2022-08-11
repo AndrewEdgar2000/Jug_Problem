@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cm3038.solution;
+package Jug_Search.solution;
 
-import cm3038.search.Node;
-import cm3038.search.State;
-import cm3038.search.informed.BestFirstSearchProblem;
+import Jug_Search.search.Node;
+import Jug_Search.search.State;
+import Jug_Search.search.informed.BestFirstSearchProblem;
 
 /**
  *

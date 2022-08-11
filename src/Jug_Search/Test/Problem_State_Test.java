@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cm3038.Test;
+package Jug_Search.Test;
 
-import cm3038.solution.Jug_State;
-import cm3038.solution.Problem_State;
+import Jug_Search.solution.Jug_State;
+import Jug_Search.solution.Problem_State;
 
 /**
  *
@@ -27,11 +27,7 @@ public class Problem_State_Test {
         System.out.println(problemState.heuristic(jug1));
         
         //System.out.println(problemState.isGoal(jug1));
-        
-        
-        
-        
-        
+
     }
     
 }

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cm3038.Test;
+package Jug_Search.Test;
 
-import cm3038.solution.Jug_State;
+import Jug_Search.solution.Jug_State;
 
 /**
  *

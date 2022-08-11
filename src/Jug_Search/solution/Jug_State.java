@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cm3038.solution;
+package Jug_Search.solution;
 
-import cm3038.search.ActionStatePair;
-import cm3038.search.State;
+import Jug_Search.search.ActionStatePair;
+import Jug_Search.search.State;
 import java.util.ArrayList;
 import java.util.List;
 /**
@@ -21,7 +21,7 @@ public class Jug_State implements State{
     public int capacityOfJugA;
     public int capacityOfJugB;
     
-    //Contructor for Jug_State
+    //Constructor for Jug_State
     public Jug_State(int jA, int jB, int capA, int capB){
         this.jugACurrent = jA;
         this.jugBCurrent = jB;
@@ -132,14 +132,14 @@ public class Jug_State implements State{
                 Jug_State nextState = new Jug_State (tempJugA, tempJugB, this.getCapacityOfJugA(), this.getCapacityOfJugB());
                 return nextState;
             }
-            
-            
-            @Override 
+
+
+            @Override
             public List<ActionStatePair> successor(){
-  
-                //ArrayList to hold the ActionStatePairs 
+
+                //ArrayList to hold the ActionStatePairs
                 List<ActionStatePair> result = new ArrayList<>();
-                
+
                 //Fill jug A from sink
                 if(this.getJugACurrent() < this.getCapacityOfJugA()){
                     Jug_Action fillA = new Jug_Action(Choice.JUG_A, Choice_Action.FILL_FROM_SINK);
